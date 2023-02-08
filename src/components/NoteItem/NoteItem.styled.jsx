@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import {fadeInAnim} from 'utils/animate'
+import { fadeInAnim } from 'utils/animate';
 
 export const NoteBoxOuter = styled.div`
   position: relative;
@@ -20,7 +20,7 @@ export const NoteBoxInner = styled.div`
 
 export const NoteName = styled.h2`
   font-size: 16px;
-`
+`;
 
 export const EditBtn = styled.button`
   margin-left: 8px;
