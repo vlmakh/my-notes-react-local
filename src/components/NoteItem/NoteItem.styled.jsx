@@ -18,6 +18,10 @@ export const NoteBoxInner = styled.div`
   animation: ${fadeInAnim} 500ms;
 `;
 
+export const NoteName = styled.h2`
+  font-size: 16px;
+`
+
 export const EditBtn = styled.button`
   margin-left: 8px;
   cursor: pointer;
