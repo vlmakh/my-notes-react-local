@@ -1,5 +1,6 @@
 import { Box } from 'components/Box/Box';
-import { Form, Text, Button } from './Confirm.styled';
+import { Form, Text } from './Confirm.styled';
+import { Button } from 'components/BtnsBlock/BtnsBlock.styled';
 
 export function Confirm({ onFormSubmit, toggleConfirm, name }) {
   return (
