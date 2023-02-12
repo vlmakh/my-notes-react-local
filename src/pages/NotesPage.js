@@ -10,7 +10,7 @@ import { Footer } from 'components/Footer/Footer';
 import { LogoText, My } from 'components/Header/Header';
 
 function NotesPage() {
-  const savedData = JSON.parse(localStorage.getItem('mynotes'));
+  const savedData = JSON.parse(localStorage.getItem('mynotes-ls'));
   const [mynotes, dispatch] = useReducer(
     reducer,
     savedData ? savedData : startNotes
@@ -19,7 +19,7 @@ function NotesPage() {
   const [dragNotes, setDragNotes] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem('mynotes', JSON.stringify(mynotes));
+    localStorage.setItem('mynotes-ls', JSON.stringify(mynotes));
   }, [mynotes]);
 
   const breakpointColumnsObj = {
